@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button>button</button>
+<input type="text" value="please enter context">
+<script>
+    var btn=document.querySelector('button');
+    var input=document.querySelector('input');
+    btn.onclick=function (){
+        input.value='clicked';
+        btn.disabled=true;
+    }
+</script>
+</body>
+</html>
