@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div></div>
+<p>
+    it is me
+    <span>123</span>
+</p>
+<script>
+    //innerText doesn't identify html tag,while innerHTML identifies html tag
+    var div = document.querySelector('div');
+    div.innerText='<strong>Today is</strong> 2023';
+    div.innerHTML='<strong>Today is</strong> 2023';//w3c
+    var p = document.querySelector('p');
+    console.log(p.innerText);
+    console.log(p.innerHTML);
+</script>
+</body>
+</html>
