@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="Messi">messi</button>
+<button id="Mbappé">Mbappé</button>
+<img src="img/img.png" alt="" title="Mbappé">
+
+<script>
+    var messi = document.getElementById('Messi');
+    var Mba = document.getElementById('Mbappé');
+    var img = document.querySelector('img');
+    messi.onclick = function () {
+        img.src='img/img_1.png';
+        img.title='Messi';
+    }
+    Mba.onclick=function (){
+        img.src='img/img.png';
+        img.title='Mbappé';
+    }
+</script>
+</body>
+</html>
