@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+            background: url(img/morning.png) no-repeat center top;
+        }
+        li {
+            list-style: none;
+        }
+        .baidu {
+            overflow: hidden;
+            margin: 100px auto;
+            background-color: white;
+            width: 410px;
+            padding-top: 3px;
+        }
+        .baidu img {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+<ul class="baidu">
+    <li><img src="img/morning.png"></li>
+    <li><img src="img/afternoon.png"></li>
+    <li><img src="img/evening.png"></li>
+    <script>
+        var imgs = document.querySelector('.baidu').querySelectorAll('img');
+        for(var i =0;i<imgs.length;i++){
+            imgs[i].onclick = function (){
+                document.body.style.backgroundImage='url('+this.src+')';
+            }
+        }
+
+    </script>
+</ul>
+</body>
+</html>
